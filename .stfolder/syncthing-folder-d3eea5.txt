@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: tt9bb-fpzpp
+created: 2026-01-24T20:50:19+01:00

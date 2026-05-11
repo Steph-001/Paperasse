@@ -1,0 +1,238 @@
+X-Antivirus: avast (VPS 19100902)
+X-Antivirus-Status: Clean
+Delivered-To: jacquetmail@gmail.com
+Received: by 2002:a92:8883:0:0:0:0:0 with SMTP id m3csp7669919ilh;
+        Wed, 16 Oct 2019 12:04:47 -0700 (PDT)
+X-Received: by 2002:adf:a48c:: with SMTP id g12mr3784124wrb.212.1571252687831;
+        Wed, 16 Oct 2019 12:04:47 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1571252687; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TRs/xwOT6ryhK7rOsYytC+bGvDdnVN73z71/R4LD72ceLcWeItCIr6GMGRcDFvM824
+         7vzSLjwSAK5fUYmEXVvTHMX9iiDX2fuiy//bbEbBnfypaGx2fpSy5YE0Htj8tDtDSENK
+         OA/0hOzj+/X1b13Jbod0gd+mwr13cP8HCH3Ha69v7rasCSGoXF2l2tlS6K+HiZHoNHzm
+         ayT2OzJ+24Hbu2PLiXh6mVrkdXYGoUfpir6xD1rgEQTVOeY+LhvWiMWKHX63sbZOYaFl
+         wgUjzWsPjC4AvsBi/A/DB3ZhVQrp5P0SsvrlrmpKGjOYIhdPeJs/cUXmBXCqBc9Lqv49
+         RuAg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:in-reply-to:references:message-id:subject:date:mime-version
+         :content-transfer-encoding:from:dkim-signature;
+        bh=30G/MkFEQBWdUQFGWhw6tDsRoOCZGx6JivB/ndA6x60=;
+        b=jTJ0jcllE0YsnqmaJCySsXkeWibJIzv9y3ouK8r6DWhbyGVT7NTjQBsJ4mPFlymXDv
+         WmfM3fRKYSgJvvvYPssyYiobvrrSyCQ1yPCBq7NSAEU/TcrxnRqnPuWNfQ7MI3NNRl4K
+         dKwTvpUTylAHZOoFuPtssJEj4IUR0Lmd4Wv1UBD9fUsM4nqpVOQZd5g5eio0cfPLmEaP
+         oTxNYxV6bkvHms6pHo3GxFtiC7x5LiecsLtpjiJC5S37ahBJhcCUChBqZxt67ianjVeN
+         mXzhYvxO0HOY4L1tf92vUuCGQqJd2yGUGg8rHUBMtwyD8+BscQiy1irGmgYsj9ZRXGIF
+         kVVA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=L4GKHMQR;
+       spf=pass (google.com: domain of titia07p@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=titia07p@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <titia07p@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id i2sor18143116wrn.13.2019.10.16.12.04.47
+        for <jacquetmail@gmail.com>
+        (Google Transport Security);
+        Wed, 16 Oct 2019 12:04:47 -0700 (PDT)
+Received-SPF: pass (google.com: domain of titia07p@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=L4GKHMQR;
+       spf=pass (google.com: domain of titia07p@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=titia07p@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=from:content-transfer-encoding:mime-version:date:subject:message-id
+         :references:in-reply-to:to;
+        bh=30G/MkFEQBWdUQFGWhw6tDsRoOCZGx6JivB/ndA6x60=;
+        b=L4GKHMQReX9oI2xb/pLTq4bLDW4f3ziyeNiUjnsLZm2MtGhyrPdmpNtNa9tNr55nNS
+         b0dN6/BsYNg71/zc2a3fvoe9BDLUiIfpjR2Q4UFqeK8uLpEwdPZ5d+uUnqnxLF6pyI6F
+         xMflZy3DnEZyaSucMVM5T9B7IoCPvwBqIi2beGQgnqcNQeqZQQmaivh/2dc5ToV3+wrD
+         foN8vuH7vay5V/fQQVhukZyd9ftEqsK7kqbbQ7w1orlep8Y7U+Hadwur2GWrxB9+jW7J
+         T+tiR28tKniLLhJYNr1Alw9QPklkhADC4mTSNJGL4Lv6istzaWA+F/ixrkShZNgp/Inh
+         Q1mA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:content-transfer-encoding:mime-version:date
+         :subject:message-id:references:in-reply-to:to;
+        bh=30G/MkFEQBWdUQFGWhw6tDsRoOCZGx6JivB/ndA6x60=;
+        b=THN9Ms2ivrQavpiSkw8i97Br3JDLqBb02fKUZPUDqTxpa4mXxOcjFekHY1AT5iK5Pg
+         aN82hauBLP9lGC+ibZICVf4sfnpJn34unF/p8jzaWn0yUAhH+HWEUkB24lOX0wk56IGV
+         2CxloH7G7AzSmW/YkXzeJ5gnm0IlK+Ophgy+YtNKWHAABC/8GMigGFprnMCeCoaOqQtV
+         y51rq/1gJdrcegmCv2H78J3pLaU/dsAkO+lL7JQ0fZBiffeqxaSqhKDs8+sHIi/PqCvM
+         qO8K3A/d5c/e2iU2LgwmeJslbi4wdvZtwsfB8I8sY3kf7z+5WzgmvjK/WuMHxFddfsSZ
+         hGAw==
+X-Gm-Message-State: APjAAAVp5vVlQf0XUDTBVoQ27sfrE5Pia4UNeyzvY/VWQHzIX0241Hu3
+	LvWnr7p3wFPbu5Zm7X/CeomyAxqF
+X-Google-Smtp-Source: APXvYqywC1kCPTWN58MyIU1APZHWFc2GsbqH8akYDYe2g0IHZ7tkrxVgaJxWqfSHIvxb0NKsHPI7ag==
+X-Received: by 2002:adf:dc44:: with SMTP id m4mr4290555wrj.203.1571252686833;
+        Wed, 16 Oct 2019 12:04:46 -0700 (PDT)
+Return-Path: <titia07p@gmail.com>
+Received: from ?IPv6:2a01:e0a:1f5:c860:3d51:e26a:9b17:891d? ([2a01:e0a:1f5:c860:3d51:e26a:9b17:891d])
+        by smtp.gmail.com with ESMTPSA id g1sm23114603wrv.68.2019.10.16.12.04.44
+        for <jacquetmail@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 16 Oct 2019 12:04:45 -0700 (PDT)
+From: Laetitia <titia07p@gmail.com>
+Content-Type: multipart/alternative;
+	boundary=Apple-Mail-04263437-B216-424C-A503-31BD6E2F9DBC
+Content-Transfer-Encoding: 7bit
+Mime-Version: 1.0 (1.0)
+Date: Wed, 16 Oct 2019 21:04:43 +0200
+Subject: Re: vente appart
+Message-Id: <CE8E4316-2AC2-4260-B84D-ED5FB6170DC8@gmail.com>
+References: <1108CFA8-9D5C-4212-A2B4-F24177157AD9@gmail.com>
+In-Reply-To: <1108CFA8-9D5C-4212-A2B4-F24177157AD9@gmail.com>
+To: =?utf-8?Q?St=C3=A9phane_Jacquet?= <jacquetmail@gmail.com>
+X-Mailer: iPhone Mail (16G114)
+
+
+--Apple-Mail-04263437-B216-424C-A503-31BD6E2F9DBC
+Content-Type: text/plain;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonsoir St=C3=A9phane,
+
+Tout est clair pour moi et je suis d=E2=80=99accord. Tu peux cong=C3=A9dier t=
+a locataire.=20
+Je te renouvelle mes remerciements pour les loyers.=20
+
+Bonne soir=C3=A9e=20
+Bisous=20
+L=C3=A6titia=20
+
+Envoy=C3=A9 de mon iPhone
+
+> Le 16 oct. 2019 =C3=A0 18:19, St=C3=A9phane Jacquet <jacquetmail@gmail.com=
+> a =C3=A9crit :
+>=20
+> Bonjour Laetitia,
+> =20
+> Le notaire vient enfin de m=E2=80=99envoyer ses calculs.
+> =20
+> Le prix de vente de l=E2=80=99appartement est donc de 190 000=E2=82=AC, de=
+ quoi l=E2=80=99on soustraie 29 810 d=E2=80=99imp=C3=B4ts sur la plus-value,=
+ 3000=E2=82=AC (=C3=A0 confirmer) de frais de notaire et environ 500=E2=82=AC=
+ de frais de diagnostic.
+> Reste 156 690=E2=82=AC.
+> =20
+> Comme j=E2=80=99ai pay=C3=A9 72% de l=E2=80=99appartement, je te rach=C3=A8=
+te ta part sur les 28% restants, soit 14% : 21 936.60 =E2=82=AC.
+> =20
+> A quoi s=E2=80=99ajoute 14% des loyers nets :7 840=E2=82=AC.
+> =20
+> =20
+> Je m=E2=80=99engage donc =C3=A0 te verser 29 776.60=E2=82=AC d=C3=A8s la v=
+ente effective. A priori au 01/05/2020.
+> =20
+> =20
+> Dis-moi si tout est clair, et dis-moi si tu es d=E2=80=99accord afin que j=
+e puisse cong=C3=A9dier ma locataire en d=C3=A9but de semaine prochaine.
+> =20
+> Bises,
+> =20
+> St=C3=A9phane
+
+--Apple-Mail-04263437-B216-424C-A503-31BD6E2F9DBC
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"content-type" content=3D"text/html; charset=3D=
+utf-8"></head><body dir=3D"auto">Bonsoir St=C3=A9phane,<div><br></div><div>T=
+out est clair pour moi et je suis d=E2=80=99accord. Tu peux cong=C3=A9dier t=
+a locataire.&nbsp;<br>Je te renouvelle mes remerciements pour les loyers.&nb=
+sp;</div><div><br></div><div>Bonne soir=C3=A9e&nbsp;</div><div>Bisous&nbsp;<=
+/div><div>L=C3=A6titia&nbsp;<br><br><div id=3D"AppleMailSignature" dir=3D"lt=
+r">Envoy=C3=A9 de mon iPhone</div><div dir=3D"ltr"><br>Le 16 oct. 2019 =C3=A0=
+ 18:19, St=C3=A9phane Jacquet &lt;<a href=3D"mailto:jacquetmail@gmail.com">j=
+acquetmail@gmail.com</a>&gt; a =C3=A9crit&nbsp;:<br><br></div><blockquote ty=
+pe=3D"cite"><div dir=3D"ltr"><meta http-equiv=3D"Content-Type" content=3D"te=
+xt/html; charset=3Dutf-8"><meta name=3D"Generator" content=3D"Microsoft Word=
+ 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Garamond;
+	panose-1:2 2 4 4 3 3 1 1 8 3;}
+@font-face
+	{font-family:"Times New Roman \(Body CS\)";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Garamond",serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><div class=3D"WordSection1"><p class=3D"MsoNormal"><span lang=3D"=
+FR" style=3D"font-family:&quot;Garamond&quot;,serif">Bonjour Laetitia,<o:p><=
+/o:p></span></p><p class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-famil=
+y:&quot;Garamond&quot;,serif"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNor=
+mal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&quot;,serif">Le n=
+otaire vient enfin de m=E2=80=99envoyer ses calculs.<o:p></o:p></span></p><p=
+ class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&q=
+uot;,serif"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><span lang=3D=
+"FR" style=3D"font-family:&quot;Garamond&quot;,serif">Le prix de vente de l=E2=
+=80=99appartement est donc de 190 000=E2=82=AC, de quoi l=E2=80=99on soustra=
+ie 29 810 d=E2=80=99imp=C3=B4ts sur la plus-value, 3000=E2=82=AC (=C3=A0 con=
+firmer) de frais de notaire et environ 500=E2=82=AC de frais de diagnostic.<=
+o:p></o:p></span></p><p class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-=
+family:&quot;Garamond&quot;,serif">Reste 156 690=E2=82=AC.<o:p></o:p></span>=
+</p><p class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Gara=
+mond&quot;,serif"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><span l=
+ang=3D"FR" style=3D"font-family:&quot;Garamond&quot;,serif">Comme j=E2=80=99=
+ai pay=C3=A9 72% de l=E2=80=99appartement, je te rach=C3=A8te ta part sur le=
+s 28% restants, soit 14%&nbsp;: 21 936.60 =E2=82=AC.<o:p></o:p></span></p><p=
+ class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&q=
+uot;,serif"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><span lang=3D=
+"FR" style=3D"font-family:&quot;Garamond&quot;,serif">A quoi s=E2=80=99ajout=
+e 14% des loyers nets&nbsp;:7 840=E2=82=AC.<o:p></o:p></span></p><p class=3D=
+"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&quot;,seri=
+f"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><span lang=3D"FR" styl=
+e=3D"font-family:&quot;Garamond&quot;,serif"><o:p>&nbsp;</o:p></span></p><p c=
+lass=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&quo=
+t;,serif">Je m=E2=80=99engage donc =C3=A0 te verser 29 776.60=E2=82=AC d=C3=A8=
+s la vente effective. A priori au 01/05/2020. <o:p></o:p></span></p><p class=
+=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&quot;,s=
+erif"><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal"><span lang=3D"FR" s=
+tyle=3D"font-family:&quot;Garamond&quot;,serif"><o:p>&nbsp;</o:p></span></p>=
+<p class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond=
+&quot;,serif">Dis-moi si tout est clair, et dis-moi si tu es d=E2=80=99accor=
+d afin que je puisse cong=C3=A9dier ma locataire en d=C3=A9but de semaine pr=
+ochaine.<o:p></o:p></span></p><p class=3D"MsoNormal"><span lang=3D"FR" style=
+=3D"font-family:&quot;Garamond&quot;,serif"><o:p>&nbsp;</o:p></span></p><p c=
+lass=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garamond&quo=
+t;,serif">Bises,<o:p></o:p></span></p><p class=3D"MsoNormal"><span lang=3D"FR=
+" style=3D"font-family:&quot;Garamond&quot;,serif"><o:p>&nbsp;</o:p></span><=
+/p><p class=3D"MsoNormal"><span lang=3D"FR" style=3D"font-family:&quot;Garam=
+ond&quot;,serif">St=C3=A9phane<o:p></o:p></span></p></div>
+</div></blockquote></div></body></html>=
+
+--Apple-Mail-04263437-B216-424C-A503-31BD6E2F9DBC--
